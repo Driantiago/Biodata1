@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Modern</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 25px;
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .photo {
+            text-align: center;
+        }
+
+        .photo img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #e0e0e0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .photo img:hover {
+            transform: scale(1.05);
+        }
+
+        .bio h1 {
+            color: #2d3748;
+            margin-bottom: 15px;
+            font-size: 2.2em;
+            position: relative;
+        }
+
+        .bio h1::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #667eea;
+            border-radius: 2px;
+        }
+
+        .bio-info {
+            margin: 15px 0;
+        }
+
+        .bio-item {
+            display: flex;
+            align-items: center;
+            margin: 12px 0;
+            font-size: 1em;
+            color: #4a5568;
+        }
+
+        .bio-item i {
+            width: 25px;
+            color: #667eea;
+            font-size: 1.1em;
+            margin-right: 10px;
+        }
+
+        .skills, .hobbies {
+            margin-top: 20px;
+        }
+
+        .skills h2, .hobbies h2 {
+            color: #2d3748;
+            margin-bottom: 12px;
+            font-size: 1.4em;
+        }
+
+        .skill-tags, .hobby-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag, .hobby-tag {
+            background: #667eea;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+
+        .hobby-tag {
+            background: #4caf50;
+        }
+
+        .skill-tag:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+
+        .hobby-tag:hover {
+            background: #388e3c;
+            transform: translateY(-2px);
+        }
+
+        .social-links {
+            margin-top: 25px;
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-links a {
+            color: #4a5568;
+            font-size: 1.4em;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #667eea;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                grid-template-columns: 1fr;
+                padding: 25px;
+            }
+            
+            .photo img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="photo">
+            <img src="Profil.jpg" alt="Foto Profil">
+        </div>
+        
+        <div class="bio">
+            <h1>Syahrul Fauzi Pratama</h1>
+            
+            <div class="bio-info">
+                <div class="bio-item">
+                    <i class="fas fa-user"></i>
+                    <span>17 Tahun</span>
+                </div>
+                <div class="bio-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Lebak, Banten</span>
+                </div>
+                <div class="bio-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>driantiago@gmail.com</span>
+                </div>
+                <div class="bio-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Teknik Jaringan Komputer dan Telekomunikasi</span>
+                </div>
+            </div>
+
+            <div class="skills">
+                <h2>Keahlian</h2>
+                <div class="skill-tags">
+                    <span class="skill-tag">Web Development</span>
+                    <span class="skill-tag">Logo Desain</span>
+                    <span class="skill-tag">Bahasa Inggris</span>
+                </div>
+            </div>
+
+            <div class="hobbies">
+                <h2>Hobi</h2>
+                <div class="hobby-tags">
+                    <span class="hobby-tag">Membaca</span>
+                    <span class="hobby-tag">Bermain Game</span>
+                    <span class="hobby-tag">Mendengarkan Musik</span>
+                </div>
+            </div>
